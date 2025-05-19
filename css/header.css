@@ -104,7 +104,7 @@ ul.desktop-menu li a {
 
 /* 使搜索icon可以被點擊且不會靠左 */
 .search-box button {
-  padding: 12px 16px;
+  padding: 12px 0px 12px 16px;
   font-size: 16px;
   cursor: pointer;
   flex-shrink: 0;
@@ -142,7 +142,7 @@ ul.desktop-menu li a {
   width: 264px;
   height: 200px;
   background-color: #1A1A40;
-  border-radius: 12px;
+  border-radius:  0px 0px 12px 12px;
   position: absolute;
   left: -360px;
   top: 150px
@@ -169,7 +169,19 @@ ul.desktop-menu li a {
 }
 
 
+@media (max-width:1300px){
+  .desktop-menu-outer {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 
+  }
+  .hamburger label img{
+    display:block;
+  }
+}
 @media (max-width:960px) {
   header {
     display: grid;
@@ -275,7 +287,7 @@ ul.desktop-menu li a {
     width: 132px;
     height: 100px;
     background-color: #1A1A40;
-    border-radius: 12px;
+    
     position: absolute;
     top: 71px
   }
