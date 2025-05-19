@@ -1,0 +1,7 @@
+
+main{
+    width: 100vh;
+    height: auto;
+    flex-grow: 1;
+    background-color: #FEE9E7;
+}

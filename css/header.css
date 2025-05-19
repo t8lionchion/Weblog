@@ -7,6 +7,22 @@
 
 }
 
+.wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.outer{
+    width: 100%;
+    height: auto;
+    min-height: 1020px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
 header {
   width: 100vw;
   height: 150px;
