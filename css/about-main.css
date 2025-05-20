@@ -1,8 +1,522 @@
-
-
-main{
-    width: 100vh;
+main {
+    width: 100%;
     height: auto;
     flex-grow: 1;
-    background-color: #FEE9E7;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* 個人基本資料 */
+
+.intropic {
+    width: 1450px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.intropic div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 540px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 個人照片 */
+.intropic div img {
+    width: 600px;
+    height: 500px;
+}
+
+/* 名字+e-mail */
+.intropic div span {
+    display: flex;
+    flex-direction: column;
+}
+
+.intropic div span h1 {
+    font-size: 40px;
+}
+
+.intropic div span span {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.intropic div span span img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 社群媒體 */
+
+.intropic div ul {
+    width: 100px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.intropic div ul li {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.intropic div ul li img {
+    width: 50px;
+    height: 50px;
+
+
+}
+
+.intropic div ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+}
+
+.intropic div ul li a:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media (max-width:1800px) {
+    .intropic {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .intropic div img {
+        width: 400px;
+        height: 330px;
+    }
+
+    .intropic div {
+        width: 400px;
+        height: 100%;
+    }
+
+}
+
+@media (max-width:850px) {
+    div.intropic {
+        height: 400px;
+    }
+
+    .intropic div {
+        height: 400px;
+    }
+
+    .intropic div img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .intropic div span h1 {
+        font-size: 20px;
+    }
+
+    .intropic div span span {
+        font-size: 14px;
+    }
+
+    .intropic div ul li img {
+        width: 30px;
+        height: 30px;
+
+
+    }
+
+    .intropic div ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+}
+
+@media (max-width:480px) {
+    div.intropic {
+        height: 300px;
+    }
+
+    .intropic div {
+        height: 300px;
+    }
+
+    .intropic div ul li img {
+        width: 30px;
+        height: 30px;
+    }
+
+    main div.intropic div.right {
+        display: none;
+    }
+}
+
+/* 自傳 */
+
+.autobiography {
+    flex-shrink: 1;
+    width: 850px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    ;
+    gap: 15px;
+}
+
+.autobiography div.icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.pib {
+    padding: 0px 30px 0px 0px;
+}
+
+.autobiography div.icon span h1 {
+    font-size: 32px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+
+    letter-spacing: 0.01em;
+    color: #5C6168;
+}
+
+.paragraph {
+    width: 780px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.paragraph p {
+    width: 750px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 4px;
+    color: #30353D;
+}
+
+@media (max-width:920px) {
+    .autobiography {
+        width: 600px;
+    }
+
+    .autobiography div.icon span img {
+        width: 600px;
+    }
+
+    .paragraph {
+        width: 600px;
+    }
+
+    .autobiography div.icon span h1 {
+        font-size: 24px;
+    }
+
+    .paragraph p {
+        width: 580px;
+        font-size: 20px;
+        line-height: 20px
+    }
+}
+
+@media (max-width:800px) {
+    .autobiography {
+        width: 400px;
+    }
+
+    .autobiography div.icon span img {
+        width: 400px;
+    }
+
+    .paragraph {
+        width: 400px;
+    }
+
+    .autobiography div.paragraph p {
+        width: 380px;
+    }
+
+    .pib {
+        padding: 0px 10px 0px 0px;
+        width: 80px;
+        height: 54px;
+    }
+}
+
+@media (max-width:560px) {
+    .autobiography {
+        width: 250px;
+    }
+
+    .autobiography div.icon span img {
+        width: 250px;
+    }
+
+    .paragraph {
+        width: 250px;
+    }
+
+    .autobiography div.paragraph p {
+        width: 240px;
+    }
+
+    .pib {
+        padding: 0px 5px 0px 0px;
+        width: 60px;
+        height: 52px;
+    }
+
+    .autobiography div.icon span h1 {
+        font-size: 20px;
+    }
+
+    .paragraph p {
+        width: 580px;
+        font-size: 12px;
+        line-height: 20px
+    }
+}
+
+@media (max-width:360px) {
+    .pib {
+        padding: 0px 3px 0px 0px;
+        width: 52px;
+        height: 52px;
+    }
+}
+
+/* 技能 */
+
+main div.autobiography div.icon img.pib2 {
+    width: 108px;
+    padding: 0px 30px 0px 0px;
+}
+
+@media (max-width:800px) {
+    main div.autobiography div.icon img.pib2 {
+        height: 52px;
+        width: 52px;
+        padding: 0px 5px 0px 0px;
+    }
+}
+
+div.skill {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.skill div {
+    display: flex;
+    flex-direction: row;
+    gap: 145px;
+
+}
+
+div.skill div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.skill div ul li {
+    font-size: 20px;
+}
+
+div.skill div ul li.m {
+    font-size: 20px;
+    color: #2F80ED;
+}
+
+@media(max-width:560px) {
+    div.skill div ul li {
+        font-size: 14px;
+    }
+
+    div.skill div {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+    }
+}
+
+/* 作品集 */
+
+
+div.work {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.work div {
+    display: flex;
+    flex-direction: row;
+    gap: 145px;
+
+}
+
+div.work div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+
+div.work div ul li {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.work div ul li.m {
+    font-size: 20px;
+    color: #2F80ED;
+}
+
+div.work div ul li span {
+    font-size: 12px;
+    color: #2D9CDB;
+}
+
+@media (max-width:800px) {
+    div.work div ul {
+        width: 200px;
+    }
+}
+
+@media(max-width:560px) {
+    div.work div ul li {
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    div.work div {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+    }
+
+    div.work div ul li span {
+        font-size: 10px;
+    }
+
+}
+
+/* 工作經歷 */
+
+div.experience {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+div.experience div {
+    display: flex;
+    flex-direction: row;
+    gap: 145px;
+
+}
+
+div.experience div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+
+div.experience div ul li {
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.experience div ul li.m {
+    font-size: 20px;
+    color: #2F80ED;
+}
+
+div.experience div ul li span {
+    font-size: 12px;
+    color: #2D9CDB;
+}
+div.experience div ul li span.date {
+    font-size: 12px;
+    color: black;
+}
+@media (max-width:800px) {
+    div.experience div ul {
+        width: 200px;
+    }
+}
+
+@media(max-width:560px) {
+    div.experience div ul li {
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    div.experience div {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+
+    }
+
+    div.experience div ul li span {
+        font-size: 10px;
+    }
+    div.experience div ul li span.date {
+    font-size: 10px;
+    
+}
+
+}
+
+#autobiography,#skill,#work,#experience {
+  
+  scroll-margin-top: 170px; /* 若有固定 header 可用這個推開距離 */
+}
+
+.intropic div span  span.address{
+    font-size: 12px;
 }

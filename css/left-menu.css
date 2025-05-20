@@ -16,7 +16,6 @@
     display: grid;
     align-items: center;
     padding: 0px 0px 0px 24px;
-
 }
 
 /* 共同的左menu */
@@ -42,6 +41,7 @@
     flex-grow: 0;
     padding: 8px 0px 0px 0px;
 }
+
 .left-menu ul li a{
    font-size: 23px;
     color: azure;
@@ -51,12 +51,11 @@
     align-items: center;
     gap: 8px
 }
+
 .left-menu ul li a:hover{
     cursor: pointer;
     opacity: 0.5;
 }
-
-
 
 @media (max-width:1300px){
     .left-menu{

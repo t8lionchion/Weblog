@@ -6,7 +6,9 @@
   font-style: normal;
 
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .wrapper{
     width: 100%;
     height: auto;
