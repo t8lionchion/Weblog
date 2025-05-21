@@ -452,7 +452,7 @@ div.experience {
 div.experience div {
     display: flex;
     flex-direction: row;
-    gap: 145px;
+    gap: 30px;
 
 }
 
@@ -520,3 +520,4 @@ div.experience div ul li span.date {
 .intropic div span  span.address{
     font-size: 12px;
 }
+
