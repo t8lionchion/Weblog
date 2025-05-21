@@ -521,3 +521,37 @@ div.experience div ul li span.date {
     font-size: 12px;
 }
 
+
+.experience div ul li span.header{
+    position: relative;
+    font-size: 20px;
+    color: black;  
+}
+div.autobiography div.experience div ul li span.header img{
+    position: absolute;
+    left: -30px;
+}
+div.autobiography div.experience div ul li span.header p{
+    position: absolute;
+    left: -60px;
+    top: 6px;
+    font-size: 10px;
+    color: black;
+}
+.time-line{
+    position: relative;
+}
+.time-line >img{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    left: 8px;
+}
+
+@media (max-width:560px){
+    .time-line >img{
+    
+        left: 28px;
+}
+}
+
