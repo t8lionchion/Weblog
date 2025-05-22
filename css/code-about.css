@@ -1,7 +1,179 @@
-
-main{
-    width: 100vh;
+main {
+    width: 100%;
     height: auto;
     flex-grow: 1;
-    background-color: #FEE9E7;
+    display: flex;
+    justify-content: center;
+
+}
+
+main .title-outer {
+    top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+@media(max-width:1700px) {
+    main .title-outer>span img {
+        width: 400px;
+        height: 288px;
+    }
+}
+
+@media(max-width:850px) {
+    main .title-outer>span img {
+        width: 500px;
+        
+    }
+    main .title-outer>span img.none {
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    main .title-outer>span img {
+        width: 300px;
+        height: 240px;
+    }
+}
+
+
+.title-outer article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 36px;
+}
+.title-outer span {
+    display: flex;
+    justify-content: center;
+    
+}
+.title-outer article h1 {
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: #1E1E1E;
+}
+
+.subtitle {
+    display: flex;
+    width: auto;
+    height: auto;
+    border: 1px solid #ddd;
+    /* 邊框 */
+    border-radius: 12px;
+    /* 圓角 */
+    padding: 16px;
+    /* 內距 */
+    background-color: #fff;
+    /* 背景色 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* 陰影 */
+    gap: 10px;
+    
+}
+
+div.subtitle img {
+    width: 160px;
+    height: 160px;
+    border-radius: 16px;
+}
+
+div.subtitle span {
+    width: 550px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 5px;
+}
+
+div.subtitle span h2 {
+    /* 心得副主題 */
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+}
+
+div.subtitle span h3 {
+
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+div.subtitle span p {
+
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #757575;
+    /* 可以限制文章自數 */
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* 想顯示幾行就寫幾行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width:850px) {
+    div.subtitle span {
+        width: 300px;
+
+    }
+
+}
+
+@media (max-width:500px) {
+    div.subtitle  span{
+        width: 250px;
+        
+    }
+    div.subtitle {
+        flex-direction: column;
+    }
+    div.subtitle span p {
+        display: none;
+    }
+    .title-outer article{
+        align-items: center;
+    }
+    .title-outer article h1{
+        font-size: 20px;
+    }
+    div.subtitle span h2{
+        font-size: 16px;
+    }
+    div.subtitle img{
+        width: 250px;
+        height: 200px;
+    }
+}
+.subtitle:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+#autobiography,#bruto,#Full-stack-engineer,
+#AI,#git,#html,#css,#python,#javascript {
+  
+  scroll-margin-top: 170px; /* 若有固定 header 可用這個推開距離 */
 }
