@@ -133,6 +133,10 @@ div.subtitle span p {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.subtitle span p:hover {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+}
 
 @media (max-width:850px) {
     div.subtitle span {
@@ -150,9 +154,12 @@ div.subtitle span p {
     div.subtitle {
         flex-direction: column;
     }
-    div.subtitle span p {
-        display: none;
+     div.subtitle span p {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+       font-size: 14px;
     }
+    
     .title-outer article{
         align-items: center;
     }
