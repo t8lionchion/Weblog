@@ -133,10 +133,6 @@ div.subtitle span p {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.subtitle span p:hover {
-    -webkit-line-clamp: unset;
-    overflow: visible;
-}
 
 @media (max-width:850px) {
     div.subtitle span {
