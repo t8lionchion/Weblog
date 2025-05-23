@@ -88,14 +88,18 @@ div.subtitle img {
 }
 
 div.subtitle span {
-    width: 550px;
+    width: 1000px;
     height: auto;
     display: flex;
     flex-direction: column;
-    
     gap: 5px;
 }
-
+@media(max-width:1730px){
+    div.subtitle span {
+    width: 600px;
+    
+}
+}
 div.subtitle span h2 {
     /* 心得副主題 */
     font-family: 'Lexend';
