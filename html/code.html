@@ -56,9 +56,9 @@
             <!-- 搜尋欄位 -->
 
             <div class="search">
-                <form action="" class="search-box">
-                    <button><img src="/img/searchicon.png" alt=""></button>
-                    <input type="text">
+                <form  id="googleForm" method="GET" action="https://www.google.com/" class="search-box" target="_blank">
+                    <button  id="submit" type="submit"><img src="/img/searchicon.png" alt=""></button>
+                    <input id="query" name="q" type="text" >
                 </form>
             </div>
         </header>
@@ -267,7 +267,7 @@
         </footer>
     </div>
 <script src="/js/common/home-code.js"></script>
-
+<script src="/js/common/common.js"></script>
 
 </body>
 </html>
