@@ -74,8 +74,6 @@
 
 🔗 [點我查看 Figma 設計稿｜View Weblog Figma Design](https://www.figma.com/design/PHtkzwXF5LdESX4uhWYNoK/weblog-V2?node-id=15-2&t=hOfnCZlLgos5t7hu-1)
 
-當然可以，以下是你提供的《Weblog 網頁規劃文件》的**英文版翻譯**，已保持專業口吻與條理清晰的格式，適合放入 GitHub、Notion、或 README 文件中。
-
 ---
 
 # 🗂️ Weblog Project Planning Document 
