@@ -154,6 +154,5 @@ The UI interface for this project was designed using Figma, including layouts fo
 
 🔗 [Click here to view the Figma Design – Weblog UI](https://www.figma.com/design/PHtkzwXF5LdESX4uhWYNoK/weblog-V2?node-id=15-2&t=hOfnCZlLgos5t7hu-1)
 
-> *If the link is inaccessible, please make sure the file is shared as “Anyone with the link can view.”*
 
 ---
