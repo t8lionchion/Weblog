@@ -59,11 +59,11 @@
 | 類別           | 使用技術與工具                                                          |
 | ------------ | ---------------------------------------------------------------- |
 | **UI/UX 設計** | [Figma](https://www.figma.com/) — 用於流程圖繪製與視覺版面設計                 |
-| **前端**       | HTML + CSS（純手刻）＋（第二階段導入） Bootstrap＋ JavaScript（第三階段導入互動功能）       |
-| **後端（預定）**   | Node.js + Express.js（RESTful API 設計）、MySQL（資料儲存）、Postman（API 測試） |
-| **版本控制**     | Git + GitHub，採 Git Flow 流程：`dev` →  → `master`       |
+| **前端**       | HTML + CSS（純手刻）＋（第二階段導入） Bootstrap＋ JavaScript       |
+| **後端（預定）**   | php（RESTful API 設計）、MySQL（資料儲存）、Postman（API 測試） |
+| **版本控制**     | Git + GitHub，採 Git Flow 流程：`dev`   → `master`       |
 | **伺服器部署**    | Ubuntu + Apache2 + 虛擬主機設定 + .htaccess URL 覆寫+SQL安裝                     |
-| **開發工具**     | VS Code、Notion、Chrome DevTools                                   |
+| **開發工具**     | VS Code、Notion、Chrome DevTools、Figma                                   |
 
 ---
 ## 🎨 五、Figma 設計稿連結  
@@ -140,11 +140,11 @@ The website is divided into two main sections: **Frontend (User Side)** and **Ba
 | Category              | Tools & Technologies                                                                               |
 | --------------------- | -------------------------------------------------------------------------------------------------- |
 | **UI/UX Design**      | Figma — for flowcharts and responsive wireframes                                                   |
-| **Frontend**          | HTML + CSS (hand-coded), Bootstrap (introduced in Phase 2), JavaScript (Phase 3 for interactivity) |
-| **Backend (Planned)** | Node.js + Express.js (RESTful API), MySQL (database), Postman (API testing)                        |
-| **Version Control**   | Git + GitHub, following Git Flow branching: `dev → qa → stage → master`                            |
+| **Frontend**          | HTML + CSS (hand-coded), Bootstrap (introduced in Phase 2), JavaScript  |
+| **Backend (Planned)** | php (RESTful API), MySQL (database), Postman (API testing)                        |
+| **Version Control**   | Git + GitHub, following Git Flow branching: `dev →  master`                            |
 | **Server Deployment** | Ubuntu + Apache2, virtual host configuration, `.htaccess` rewriting, MySQL installation            |
-| **Dev Tools**         | VS Code, Notion, Chrome DevTools                                                                   |
+| **Dev Tools**         | VS Code, Notion, Chrome DevTools ,Figma                                                                  |
 
 ---
 
