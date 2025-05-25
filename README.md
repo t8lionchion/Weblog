@@ -66,4 +66,10 @@
 | **開發工具**     | VS Code、Notion、Chrome DevTools                                   |
 
 ---
+## 🎨 五、Figma 設計稿連結  
+## 🎨 Figma Design Link
 
+此專案 UI 介面使用 Figma 設計，包括首頁、技術分享頁、關於我頁與管理者介面。  
+The UI of this project was designed in Figma, including the homepage, code sharing, about, and admin interface.
+
+🔗 [點我查看 Figma 設計稿｜View Weblog Figma Design](https://www.figma.com/design/PHtkzwXF5LdESX4uhWYNoK/weblog-V2?node-id=15-2&t=hOfnCZlLgos5t7hu-1)
