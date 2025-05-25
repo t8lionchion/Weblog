@@ -78,7 +78,7 @@
 
 ---
 
-# 🗂️ Weblog Project Planning Document (EN)
+# 🗂️ Weblog Project Planning Document 
 
 ## 1. Design Concept
 
