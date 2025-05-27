@@ -357,7 +357,7 @@ div.skill div ul li.m {
     color: #2F80ED;
 }
 
-@media(max-width:560px) {
+@media(max-width:800px) {
     div.skill div ul li {
         font-size: 14px;
     }
@@ -365,7 +365,30 @@ div.skill div ul li.m {
     div.skill div {
         display: flex;
         flex-direction: row;
-        gap: 50px;
+        gap: 20px;
+    }
+
+    div.skill div ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    div.skill div ul li.m {
+        font-size: 16px;
+        color: #2F80ED;
+    }
+}
+
+@media(max-width:560px) {
+    div.skill div ul li {
+        font-size: 10px;
+    }
+
+    div.skill div {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
 
     }
 }
@@ -479,10 +502,12 @@ div.experience div ul li span {
     font-size: 12px;
     color: #2D9CDB;
 }
+
 div.experience div ul li span.date {
     font-size: 12px;
     color: black;
 }
+
 @media (max-width:800px) {
     div.experience div ul {
         width: 200px;
@@ -505,53 +530,61 @@ div.experience div ul li span.date {
     div.experience div ul li span {
         font-size: 10px;
     }
+
     div.experience div ul li span.date {
-    font-size: 10px;
-    
-}
+        font-size: 10px;
+
+    }
 
 }
 
-#autobiography,#skill,#work,#experience {
-  
-  scroll-margin-top: 170px; /* 若有固定 header 可用這個推開距離 */
+#autobiography,
+#skill,
+#work,
+#experience {
+
+    scroll-margin-top: 170px;
+    /* 若有固定 header 可用這個推開距離 */
 }
 
-.intropic div span  span.address{
+.intropic div span span.address {
     font-size: 12px;
 }
 
 
-.experience div ul li span.header{
+.experience div ul li span.header {
     position: relative;
     font-size: 20px;
-    color: black;  
+    color: black;
 }
-div.autobiography div.experience div ul li span.header img{
+
+div.autobiography div.experience div ul li span.header img {
     position: absolute;
     left: -30px;
 }
-div.autobiography div.experience div ul li span.header p{
+
+div.autobiography div.experience div ul li span.header p {
     position: absolute;
     left: -60px;
     top: 6px;
     font-size: 10px;
     color: black;
 }
-.time-line{
+
+.time-line {
     position: relative;
 }
-.time-line >img{
+
+.time-line>img {
     position: absolute;
     width: 1px;
     height: 100%;
     left: 8px;
 }
 
-@media (max-width:560px){
-    .time-line >img{
-    
-        left: 28px;
-}
-}
+@media (max-width:560px) {
+    .time-line>img {
 
+        left: 28px;
+    }
+}
