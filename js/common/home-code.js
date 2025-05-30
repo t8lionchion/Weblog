@@ -48,7 +48,7 @@ function rendermessage(currentId, msgOutput){
   /* 等下打 */
   const msglist=JSON.parse(localStorage.getItem(currentId)) || [];
   msgOutput.innerHTML="";
-  msglist.forEach(msg=>{
+  msglist.forEach((msg,index)=>{
     const card=document.createElement("div");
     /* 賦予其class避免跑版 */
     card.className="card mb-2";
@@ -65,7 +65,9 @@ function rendermessage(currentId, msgOutput){
 
     /* 監聽刪除按鈕 */
     btn.addEventListener("click",()=>{
-        card.remove();
+      msglist.splice(index,1);
+      localStorage.setItem(currentId,JSON.stringify(msglist));
+      rendermessage(currentId, msgOutput);
     })
     /* 組成畫面 */
     msgOutput.appendChild(card);
@@ -90,7 +92,7 @@ subtitle.forEach(localmessageid=>{
   btn.addEventListener("click",()=>{
     const nameI=nameInput.value.trim();
     const msgI=msgInput.value.trim();
-    if(nameI==null ||msgI==null){
+    if(!nameI || !msgI){
       return;
     }
      /* 取好的值存進對應的本地資料庫 */
@@ -110,5 +112,7 @@ subtitle.forEach(localmessageid=>{
     /* 渲染留言區 */
     rendermessage(currentId, msgOutput)
   })
+  /* 渲染所有留言區 */
+  rendermessage(currentId, msgOutput);
 });
 
