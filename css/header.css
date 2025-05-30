@@ -4,8 +4,9 @@
   box-sizing: border-box;
   font-family: 'Lexend';
   font-style: normal;
-
+  
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -56,8 +57,10 @@ header {
   justify-content: center;
 }
 
+
 .desktop-menu {
   display: flex;
+  align-items: center;
 }
 
 /* 為了之後添加動畫效果準備 */
