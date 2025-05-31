@@ -23,25 +23,6 @@ subtitles.forEach(subtitle => {
 
 /* 將所有留言板中的div.data-article-id抓出來 */
 const subtitle=document.querySelectorAll("div[data-article-id]");
-/* 建立空陣列 */
-let arrayid=[];
-let jsonid={};
-/* 用迴圈找到所有留言版的data-article-id */
-subtitle.forEach(allid=>{
-  /* console.log(allid.dataset.articleId); */
-  /* 將它們全部儲存在陣列中 */
-  arrayid.push(allid.dataset.articleId);
-  
-});
-/* 確認陣列格式沒有問題 */
-/* console.log(arrayid); */
-/* 將array轉為json */
-  jsonid=JSON.stringify(arrayid);
-/* 確認json格式沒有問題 */
-/* console.log(jsonid); */
- /* 將他們存進local資料庫中 */
- localStorage.setItem("allmessageid",jsonid);
-
 
 /* 渲染留言區function() */
 function rendermessage(currentId, msgOutput){
@@ -66,7 +47,8 @@ function rendermessage(currentId, msgOutput){
     /* 監聽刪除按鈕 */
     btn.addEventListener("click",()=>{
       msglist.splice(index,1);
-      localStorage.setItem(currentId,JSON.stringify(msglist));
+      let msglistJson=JSON.stringify(msglist);
+      localStorage.setItem(currentId,msglistJson);
       rendermessage(currentId, msgOutput);
     })
     /* 組成畫面 */
@@ -99,7 +81,8 @@ subtitle.forEach(localmessageid=>{
      /* 先準備key以方便對應文章的留言區 */
     const key=`${currentId}`;
     /* 先查看是否有之前的留言或是對應的文章資料庫 */
-    const oldmessage=JSON.parse(localStorage.getItem(key)) || [];
+    let oldmessagejson=localStorage.getItem(key);
+    const oldmessage=JSON.parse(oldmessagejson) || [];
     oldmessage.push({
       name1:nameI,
       content:msgI
